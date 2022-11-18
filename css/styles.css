@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.linkNav {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+}
+
+.fondoAgua {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/Images/agua.jpg);
+    padding: 10rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    }
+
+.poolClean {
+    font-size: 5rem;
+    justify-content: center;
+    display: flex;
+}
+
+.empresa {
+    padding: 3rem;
+    font-size: 2.3rem;
+}
