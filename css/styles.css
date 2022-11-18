@@ -5,6 +5,8 @@
 }
 
 .linkNav {
+    margin-left: 1rem;
+    margin-right: 1rem;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: x-large;
@@ -14,9 +16,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/Images/agua.jpg);
-    padding: 10rem;
+    padding: 8.78rem;
     text-align: center;
     color: rgb(255, 255, 255);
+
     }
 
 .poolClean {
@@ -27,5 +30,17 @@
 
 .empresa {
     padding: 3rem;
-    font-size: 2.3rem;
+    font-size: 2.1rem;
+}
+
+.texto{
+    text-align: center;
+    color: white;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-size: x-large;
+    font-weight: lighter;
+}
+.fondoTexto{
+    background-color: rgba(1, 0, 41, 0.309);
 }
