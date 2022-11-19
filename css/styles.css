@@ -45,10 +45,10 @@
     font-weight: lighter;
 }
 .fondoTexto{
-    background-color: rgba(1, 0, 41, 0.309);
+    background-color: rgba(1, 0, 41, 0.35);
 }
 
-.textoCard{
+.textoCard{ 
     text-align: center;
 
 }
@@ -60,5 +60,26 @@
 }
 
 .tarjeta{
-    background-color: rgb(113, 179, 255);
+    background-color: rgb(65, 62, 255);
+    margin-bottom: 3rem;
+}
+.boton{
+    display: block;
+    margin:auto;
+}
+.imgFooter{
+    margin: auto;
+    display: block;
+    width: 4rem;
+    border-radius: 0.5rem;
+}
+.textoFooter{
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.061);
+    text-align: center;
+}
+.fondoFooter{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))
 }
