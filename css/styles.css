@@ -110,7 +110,6 @@
     border-radius: 1rem;
     padding: 1rem;
     color: white;
-    background-color: rgba(255, 255, 255, 0.061);
     text-align: center;
 }
 .fondoFooter{
@@ -123,5 +122,13 @@
     text-decoration: none;
     color: white;
     font-weight: lighter;
-    font-size: large;
+    font-size: larger;
+
+}
+
+.estiloLink{
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.061);
+    padding: 1rem;
+    margin: auto;
 }
