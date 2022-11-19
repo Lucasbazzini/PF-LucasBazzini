@@ -48,9 +48,20 @@
     background-color: rgba(1, 0, 41, 0.35);
 }
 
-.textoCard{ 
+.tituloCard{ 
+    font-size: xx-large;
+    font-weight: lighter;
     text-align: center;
+    color: rgb(255, 255, 255);
 
+
+}
+.parrafoCard{
+    margin-top: 2rem;
+    font-size: large;
+    font-weight: lighter;
+    text-align: center;
+    color: rgb(255, 255, 255);
 }
 
 .imgCard{
@@ -59,13 +70,32 @@
     
 }
 
-.tarjeta{
-    background-color: rgb(65, 62, 255);
-    margin-bottom: 3rem;
+.tarjetaLimpiezas{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/limpiezascard2.jpg);
+    padding: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0;
+}
+.tarjetaMantenimientos{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/manteniminetocard2.jpg);
+    padding: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0;
+    margin-bottom: 5rem;
+}
+.tarjetaProductos{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/Productoscard2.jpg);
+    padding: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0;
 }
 .boton{
     display: block;
     margin:auto;
+    margin-top: 5rem;
 }
 .imgFooter{
     margin: auto;
@@ -74,6 +104,9 @@
     border-radius: 0.5rem;
 }
 .textoFooter{
+    font-weight: lighter;
+    display: block;
+    margin: auto;
     border-radius: 1rem;
     padding: 1rem;
     color: white;
@@ -81,5 +114,14 @@
     text-align: center;
 }
 .fondoFooter{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8))
+    padding: 2rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+
+}
+
+.linkFooter{
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    font-size: large;
 }
