@@ -27,13 +27,13 @@
 .poolClean {
     flex-wrap: wrap;
     display: flex;
-    font-size: 4rem;
+    font-size: 3rem;
     justify-content: center;
 }
 
 .empresa {
     padding: 2rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .texto{
@@ -131,4 +131,28 @@
     background-color: rgba(255, 255, 255, 0.061);
     padding: 1rem;
     margin: auto;
+}
+.mantenimientos{
+    
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+}
+
+.empresaIdeal{
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.textoMantenimiento{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    font-size: x-large;
+    font-weight: lighter;
+}
+
+.tarjetaPlanes{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
 }
