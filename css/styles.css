@@ -49,20 +49,19 @@
 }
 
 .tituloCard{ 
-    font-size: xx-large;
     font-weight: lighter;
     text-align: center;
     color: rgb(255, 255, 255);
-
-
+    
 }
+
 .parrafoCard{
     margin-top: 2rem;
-    font-size: large;
     font-weight: lighter;
     text-align: center;
     color: rgb(255, 255, 255);
 }
+
 
 .imgCard{
     margin-top: 1rem;
@@ -71,11 +70,18 @@
 }
 
 .tarjetaLimpiezas{
+    position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/limpiezascard2.jpg);
     padding: 3rem;
     background-repeat: no-repeat;
     background-size: cover;
     border: 0;
+    transition: all 2s;
+}
+
+.tarjetaLimpiezas:hover{
+    padding: 4rem;
+    border-radius: 2rem;
 }
 .tarjetaMantenimientos{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/manteniminetocard2.jpg);
@@ -84,14 +90,27 @@
     background-size: cover;
     border: 0;
     margin-bottom: 5rem;
+    transition: all 2s;
 }
+.tarjetaMantenimientos:hover{
+    padding: 4rem;
+    border-radius: 2rem;
+}
+
 .tarjetaProductos{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/Productoscard2.jpg);
     padding: 3rem;
     background-repeat: no-repeat;
     background-size: cover;
     border: 0;
+    transition: all 2s;
 }
+
+.tarjetaProductos:hover{
+    padding: 4rem;
+    border-radius: 2rem;
+}
+
 .boton{
     display: block;
     margin:auto;
@@ -155,4 +174,34 @@
 
 .tarjetaPlanes{
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    transition: all 2s;
+}
+
+.tarjetaPlanes:hover{
+
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.botonPlanes{
+    display: block;
+}
+
+.formulario{
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.lineaFormulario{
+padding: 1rem;
+}
+
+.letraForm{
+    font-size: 1rem;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+}
+
+.formularioFondo {
+    background-color: rgba(1, 0, 41, 0.35);
 }

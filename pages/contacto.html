@@ -5,39 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
-    
-    <header class="header">
-        <a class="linkHeader" href="../index.html" class="head">
-            <img class="imagenHeader" src="../assets/Images/logodefinitivo.png" alt="">
-            <h1 class="tituloHeader">PoolClean</h1> 
-        </a>
-        <nav class="nav">
-            <a class="linkLista" href="../index.html">Inicio</a>
-            <a class="linkLista" href="../pages/limpiezas.html">Limpiezas</a>
-            <a class="linkLista" href="../pages/mantenimientos.html">Mantenimientos</a>
-            <a class="linkLista" href="../pages/venta-de-productos.html">Venta de Productos</a>
-            <a class="linkLista" href="#">Contacto</a>
-        </nav>    
-
+<body class="bg-info  animate__animated animate__fadeIn">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/Images/logodefinitivo.png" alt="" width="70" height="70" class="d-inline-block align-text-center">
+                    PoolCLean
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav  justify-content-around w-100 bg-info">
+                  <li class="nav-item">
+                    <a class=" linkNav" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="linkNav" href="../pages/limpiezas.html">Limpiezas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class=" linkNav" href="../pages/mantenimientos.html">Mantenimientos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class=" linkNav" href="../pages/venta-de-productos.html">Venta de Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="linkNav " href="#">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
-    <main>
+    <main class="formularioFondo">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="fondoAgua">
+                    <h1 class="mantenimientos">
+                        Contacto
+                    </h1>
+                    <h2 class="container ">
+                        ¡Dejanos tus datos y estaremos en contacto a la brevedad!
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container formulario">
+            <form class="row g-3">
+            <div class="col-md-6">
+              <label  class="form-label letraForm lineaFormulario">Nombre</label>
+              <input type="text" class="form-control" >
+            </div>
+            <div class="col-md-6">
+              <label  class="form-label letraForm lineaFormulario">Apellido</label>
+              <input type="text" class="form-control" >
+            </div>
+            <div class="col-12">
+              <label  class="form-label letraForm lineaFormulario">Mail de contacto</label>
+              <input type="email" class="form-control"  placeholder="@gmail.com">
+            </div>
+            <div class="col-12">
+              <label  class="form-label letraForm lineaFormulario">Número de teléfono</label>
+              <input type="number" class="form-control"  placeholder="+54 ...">
+            </div>
+            <div class="col-md-6">
+              <label class="form-label letraForm lineaFormulario">Ciudad</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col-md-4">
+              <label  class="form-label letraForm lineaFormulario">Motivo de Contacto</label>
+              <select  class="form-select">
+                <option selected>Limpieza</option>
+                <option>Mantenimiento</option>
+                <option>Venta de Producto</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label  class="form-label letraForm lineaFormulario">Pequeña descripción</label>
+              <input type="text" class="form-control mb-5" >
+            </div>
+            <div class="col-12 ">
+              <button type="submit" class="btn btn-info w-100">¡Listo!</button>
+            </div>
+          </form></div>
+       
     </main>
 
-    <footer >
-        <div>
-        <img src="./assets/Images/bxl-whatsapp.svg" alt="wpp">
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia optio voluptatibus laudantium itaque eligendi consectetur totam, repellendus harum possimus soluta. Quae odit laudantium debitis voluptates dolorem? Ipsum illo laboriosam adipisci.
-        </p>
-        <p>
-            Todos los derechos reservados © | Desarrollado por Lucas
-        </p>
-        </div>
-    </footer>
-    
+    <footer class="fondoFooter">
+        <div class="container estiloLink ">
+          <div class="row">
+              <a class="p-2 linkFooter" href="../index.html">Inicio</a> 
+              <a class="p-2 linkFooter" href="../pages/limpiezas.html">Limpiezas</a>
+              <a class="p-2 linkFooter" href="#">Mantenimientos</a>
+              <a class="p-2 linkFooter" href="../pages/venta-de-productos.html">Venta de productos</a>
+              <a class="p-2 linkFooter" href="../pages/contacto.html">Contacto</a> 
+          </div>  
+           <div class="container">
+             <div class="row">
+               <p class="textoFooter"> Todos los derechos reservados © | Desarrollado por Lucas </p>
+             </div>
+           </div> 
+       </footer>
+       <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>
