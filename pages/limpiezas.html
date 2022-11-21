@@ -5,55 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Limpiezas</title>
+    <link rel="stylesheet" href="../css/bootstrap.rtl.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
-<body>
+<body class="bg-info  animate__animated animate__fadeIn">
     
-    <header class="header">
-        <a class="linkHeader" href="../index.html" class="head">
-            <img class="imagenHeader" src="../assets/Images/logodefinitivo.png" alt="">
-            <h1 class="tituloHeader">PoolClean</h1> 
-        </a>
-        <nav class="nav">
-            <a class="linkLista" href="../index.html">Inicio</a>
-            <a class="linkLista" href="#">Limpiezas</a>
-            <a class="linkLista" href="../pages/mantenimientos.html">Mantenimientos</a>
-            <a class="linkLista" href="../pages/venta-de-productos.html">Venta de Productos</a>
-            <a class="linkLista" href="../pages/contacto.html">Contacto</a>
-        </nav>        
-
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/Images/logodefinitivo.png" alt="logo" width="70" height="70" class="d-inline-block align-text-center">
+                    PoolCLean
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav  justify-content-around w-100 bg-info">
+                    <li class="nav-item">
+                        <a class=" linkNav" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="linkNav" href="#">Limpiezas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" linkNav" href="../pages/mantenimientos.html">Mantenimientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" linkNav" href="../pages/venta-de-productos.html">Venta de Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="linkNav " href="../pages/contacto.html">Contacto</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
     </header>
 
     <main>
-        <section>
-            <h2>
-                Limpiezas
-            </h2>
-        </section>
-        <section>
-            <p>
-                Contamos con una gran variedad de opciones al momento de limpiar su pileta, una de las mas elegidas es la limpieza sin ningun extra.Esta opcion se basa en contactarnos y juntos coordinar un dia y un horario para que le limpiemos su piscina sin agregarle ningun producto ni hacer ninguna revision ni mantenimiento del agua.Suele ser elegida quienes no tienen las herramientas necesarias para hacerlo por su cuenta pero sin embargo le hacen un seguimiento a su pileta y compran sus productos por su cuenta.
-            </p>
-        </section>
-        <section>
-            <h3>
-                Precio por limpieza: $1500
-            </h3>
-        </section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="fondoAgua">
+                    <h1 class="mantenimientos">
+                        Limpiezas
+                    </h1>
+                    <h2 class="container empresaIdeal">
+                        Una forma rápida y sencilla de tener tu piscina en las mejores condiciones
+                    </h2>
+                </div>
+            </div>
+        </div>
 
+    <div class="container">
+        <div class="row">
+            <h3 class="textoLimpiezas" style="margin-bottom: 7rem ;">
+                Contamos con una gran variedad de opciones al momento de limpiar su pileta, una de las más elegidas es la limpieza sin extras agregados.<br>
+                Esta opción se basa en contactarnos y juntos coordinar un dia y un horario para que le limpiemos su piscina sin agregarle ningún tipo de producto ni hacer ninguna revisión ni mantenimiento del agua.<br>
+                Suele ser elegida quienes no tienen las herramientas necesarias para hacerlo por su cuenta pero sin embargo le hacen un mantenimiento a su pileta y compran sus productos por su cuenta.
+            </h3>
+            <h4 class="precioLimpieza">
+                Precio por limpieza: $1500
+            </h4>
+            
+        </div>
+    </div>
     </main>
 
-    <footer class="footer">
-        <div>
-        <img class="logoWpp" src="./assets/Images/bxl-whatsapp.svg" alt="">
-        <p class="textoFooter">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia optio voluptatibus laudantium itaque eligendi consectetur totam, repellendus harum possimus soluta. Quae odit laudantium debitis voluptates dolorem? Ipsum illo laboriosam adipisci.
-        </p>
-        <p class="derechos">
-            Todos los derechos reservados © | Desarrollado por Lucas
-        </p>
-        </div>
-    </footer>
-    
+    <footer class="fondoFooter">
+        <div class="container estiloLink ">
+          <div class=" row">
+             <a class="p-1 linkFooter" href="../index.html">Inicio</a> 
+             <a class="p-1 linkFooter" href="#">Limpiezas</a>
+             <a class="p-1 linkFooter" href="../pages/mantenimientos.html">Mantenimientos</a>
+             <a class="p-1 linkFooter" href="../pages/venta-de-productos.html">Venta de productos</a>
+             <a class="p-1 linkFooter" href="../pages/contacto.html">Contacto</a>  
+           </div>
+           <div class="container">
+             <div class="row">
+               <p class="textoFooter"> Todos los derechos reservados © | Desarrollado por Lucas </p>
+             </div>
+         </div>
+         
+       </footer>
+       <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>
