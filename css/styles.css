@@ -41,7 +41,7 @@
     color: white;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: lighter;
 }
 .fondoTexto{
@@ -50,6 +50,7 @@
 
 .tituloCard{ 
     font-weight: lighter;
+    font-size: xx-large;
     text-align: center;
     color: rgb(255, 255, 255);
     
@@ -57,6 +58,7 @@
 
 .parrafoCard{
     margin-top: 2rem;
+    font-size: x-large;
     font-weight: lighter;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -80,7 +82,7 @@
 }
 
 .tarjetaLimpiezas:hover{
-    padding: 4rem;
+    transform: scale(1.1);
     border-radius: 2rem;
 }
 .tarjetaMantenimientos{
@@ -93,7 +95,7 @@
     transition: all 2s;
 }
 .tarjetaMantenimientos:hover{
-    padding: 4rem;
+    transform: scale(1.1);
     border-radius: 2rem;
 }
 
@@ -107,7 +109,7 @@
 }
 
 .tarjetaProductos:hover{
-    padding: 4rem;
+    transform: scale(1.1);
     border-radius: 2rem;
 }
 
@@ -168,7 +170,7 @@
     color: rgb(255, 255, 255);
     padding-top: 6rem;
     padding-bottom: 6rem;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: lighter;
 }
 
@@ -178,8 +180,7 @@
 }
 
 .tarjetaPlanes:hover{
-
-    padding: 1rem;
+    transform: scale(1.1);
     border-radius: 2rem;
 }
 
