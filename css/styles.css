@@ -298,3 +298,9 @@ padding: 1rem;
     margin-bottom: 5rem;
     font-weight: lighter;
 }
+
+.ventaDeproductos{
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+}
