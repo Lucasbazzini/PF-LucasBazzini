@@ -322,7 +322,7 @@ main{
         .container{
             .row{
                     .tarjetaMantenimientos{
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/limpiezascard2.jpg);
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/manteniminetocard2.jpg);
                     padding: 3rem;
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -392,7 +392,7 @@ main{
         .container{
             .row{
                     .tarjetaProductos{
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/limpiezascard2.jpg);
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/Productoscard2.jpg);
                     padding: 3rem;
                     background-repeat: no-repeat;
                     background-size: cover;
@@ -523,6 +523,83 @@ main{
     }
 }
 
+main{
+    .fondoTexto{
+        .container{
+            .row{
+                .textoMantenimiento{
+                    text-align: center;
+                    color: rgb(255, 255, 255);
+                    padding-top: 6rem;
+                    padding-bottom: 6rem;
+                    font-size: xx-large;
+                    font-weight: lighter;
+                    border-top: 2px solid rgb(255, 255, 255);
+                    border-bottom: 2px solid white;
+                }
+            }
+        }
+    }
+    
+    .container{
+        .row{
+            .tarjetaPlanes{
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+                transition: all 2s;
+                .card-body{
+                    .tituloCard{
+                        font-weight: lighter;
+                        font-size: xx-large;
+                        text-align: center;
+                        color: rgb(255, 255, 255);
+                    }
+                    .parrafoCard{
+                        margin-top: 2rem;
+                        font-size: x-large;
+                        font-weight: lighter;
+                        text-align: center;
+                        color: rgb(255, 255, 255);
+                    }
+                    .botonPlanes{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+main{
+    .container{
+        .row{
+            .tarjetaPlanes:hover{
+                transform: scale(1.1);
+                border-radius: 2rem;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 540px){
+    main{
+        .fondoTexto{
+            .container{
+                .row{
+                    .textoMantenimiento{
+                        font-size: x-large;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}
+
+
+
 .container{
     .row{
         .textoLimpiezas{
@@ -557,62 +634,36 @@ main{
     }  
 }
 
-.textoMantenimiento{
-    text-align: center;
-    color: rgb(255, 255, 255);
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    font-size: xx-large;
-    font-weight: lighter;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-}
 
-@media (max-width: 540px){
-    .textoMantenimiento{
-        font-size: x-large;
+main{
+    .formularioFondo{
+        background-color: rgba(1, 0, 41, 0.35);
+    }
+
+    .formulario{
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+        .lineaFormulario{
+            padding: 1rem;
+        }
+        .letraForm{
+            font-size: 1rem;
+            font-weight: lighter;
+            color: rgb(255, 255, 255);
+        }
     }
 }
 
-.tarjetaPlanes{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-    transition: all 2s;
+main{
+    .container-fluid{
+        .row{
+            .fondoAgua{
+                .ventaDeproductos{
+                    display: flex;
+                    font-size: 3rem;
+                    justify-content: center;
+                }
+            }
+        }
+    }
 }
-
-.tarjetaPlanes:hover{
-    transform: scale(1.1);
-    border-radius: 2rem;
-}
-
-.botonPlanes{
-    display: block;
-}
-
-.formulario{
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-}
-
-.lineaFormulario{
-padding: 1rem;
-}
-
-.letraForm{
-    font-size: 1rem;
-    font-weight: lighter;
-    color: rgb(255, 255, 255);
-}
-
-.formularioFondo {
-    background-color: rgba(1, 0, 41, 0.35);
-}
-
-
-
-
-.ventaDeproductos{
-    display: flex;
-    font-size: 3rem;
-    justify-content: center;
-}
-
