@@ -1,13 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-main{
-    background-color: rgba(1, 0, 41, 0.35);
-}
-
+/*
 .linkNav {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -33,7 +24,7 @@ main{
     display: flex;
     font-size: 3rem;
     justify-content: center;
-}
+} 
 
 .empresa {
     padding: 2rem;
@@ -51,20 +42,20 @@ main{
     border-bottom: 2px solid white;
 }
 
-@media (max-width: 540px){
-    .texto{
-        font-size: x-large;
-    }
+.tarjetaLimpiezas{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/limpiezascard2.jpg);
+    padding: 3rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0;
+    transition: all 2s;
 }
-
-
 
 .tituloCard{ 
     font-weight: lighter;
     font-size: xx-large;
     text-align: center;
     color: rgb(255, 255, 255);
-    
 }
 
 .parrafoCard{
@@ -85,22 +76,6 @@ main{
     }
 }
 
-
-.imgCard{
-    margin-top: 1rem;
-    border-radius: 0.375rem;
-    
-}
-
-.tarjetaLimpiezas{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/limpiezascard2.jpg);
-    padding: 3rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 0;
-    transition: all 2s;
-}
-
 .tarjetaLimpiezas:hover{
     transform: scale(1.1);
     border-radius: 2rem;
@@ -116,7 +91,6 @@ main{
         padding: 3rem;
     }
 }
-
 
 .tarjetaMantenimientos{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/manteniminetocard2.jpg);
@@ -145,7 +119,6 @@ main{
     }
 
 }
-    
 
 .tarjetaProductos{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/Productoscard2.jpg);
@@ -172,135 +145,368 @@ main{
     }
 }
 
-.boton{
-    display: block;
-    margin:auto;
-    margin-top: 5rem;
-}
-.imgFooter{
-    margin: auto;
-    display: block;
-    width: 4rem;
-    border-radius: 0.5rem;
-}
-.textoFooter{
-    font-weight: lighter;
-    display: block;
-    margin: auto;
-    border-radius: 1rem;
-    padding: 1rem;
-    color: white;
-    text-align: center;
-}
-.fondoFooter{
-    padding: 2rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-}
+main {
+  background-color: rgba(1, 0, 41, 0.35); }
 
-.linkFooter{
-    text-decoration: none;
-    color: white;
-    font-weight: lighter;
-    font-size: larger;
+header .linkNav {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: white;
+  font-size: x-large; }
 
-}
-
-.estiloLink{
-    border-radius: 1rem;
-    background-color: rgba(255, 255, 255, 0.061);
-    padding: 1rem;
-    margin: auto;
-}
-.mantenimientos{
-    
+main .fondoAgua {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/Images/agua.jpg);
+  text-align: center;
+  color: white;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  margin-bottom: 5rem; }
+  main .fondoAgua .poolClean {
+    flex-wrap: wrap;
     display: flex;
     font-size: 3rem;
-    justify-content: center;
-}
-
-.empresaIdeal{
+    justify-content: center; }
+  main .fondoAgua .empresa {
     padding: 2rem;
-    font-size: 1.5rem;
-}
+    font-size: 1.5rem; }
 
-.textoMantenimiento{
-    text-align: center;
-    color: rgb(255, 255, 255);
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+main .container .row .texto {
+  text-align: center;
+  color: white;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  font-size: xx-large;
+  font-weight: lighter;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white; }
+
+@media (max-width: 540px) {
+  main .container .row .texto {
+    font-size: x-large; } }
+
+main .container .row .tarjetaLimpiezas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/limpiezascard2.jpg);
+  padding: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0;
+  transition: all 2s; }
+  main .container .row .tarjetaLimpiezas .tituloCard {
+    font-weight: lighter;
     font-size: xx-large;
+    text-align: center;
+    color: white; }
+  main .container .row .tarjetaLimpiezas .parrafoCard {
+    margin-top: 2rem;
+    font-size: x-large;
     font-weight: lighter;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-}
+    text-align: center;
+    color: white; }
 
-@media (max-width: 540px){
-    .textoMantenimiento{
-        font-size: x-large;
-    }
-}
+@media (max-width: 540px) {
+  main .container .row .tarjetaLimpiezas .parrafoCard {
+    margin-top: 2rem;
+    font-size: large;
+    font-weight: lighter;
+    text-align: center;
+    color: white; } }
 
-.tarjetaPlanes{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+@media (max-width: 1200px) {
+  main .container .row .tarjetaLimpiezas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/agua.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0;
     transition: all 2s;
-}
+    padding: 3rem; } }
 
-.tarjetaPlanes:hover{
-    transform: scale(1.1);
-    border-radius: 2rem;
-}
+main .tarjetaLimpiezas:hover {
+  transform: scale(1.1);
+  border-radius: 2rem; }
 
-.botonPlanes{
-    display: block;
-}
-
-.formulario{
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-}
-
-.lineaFormulario{
-padding: 1rem;
-}
-
-.letraForm{
-    font-size: 1rem;
+main .container .row .tarjetaLimpiezas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/limpiezascard2.jpg);
+  padding: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0;
+  transition: all 2s; }
+  main .container .row .tarjetaLimpiezas .tituloCard {
     font-weight: lighter;
-    color: rgb(255, 255, 255);
-}
+    font-size: xx-large;
+    text-align: center;
+    color: white; }
+  main .container .row .tarjetaLimpiezas .parrafoCard {
+    margin-top: 2rem;
+    font-size: x-large;
+    font-weight: lighter;
+    text-align: center;
+    color: white; }
+
+@media (max-width: 540px) {
+  main .container .row .tarjetaLimpiezas .parrafoCard {
+    margin-top: 2rem;
+    font-size: large;
+    font-weight: lighter;
+    text-align: center;
+    color: white; } }
+
+@media (max-width: 1200px) {
+  main .container .row .tarjetaLimpiezas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/agua.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0;
+    transition: all 2s;
+    padding: 3rem; } }
+
+main .tarjetaLimpiezas:hover {
+  transform: scale(1.1);
+  border-radius: 2rem; }
+
+main .container .row .tarjetaLimpiezas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/limpiezascard2.jpg);
+  padding: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0;
+  transition: all 2s; }
+  main .container .row .tarjetaLimpiezas .tituloCard {
+    font-weight: lighter;
+    font-size: xx-large;
+    text-align: center;
+    color: white; }
+  main .container .row .tarjetaLimpiezas .parrafoCard {
+    margin-top: 2rem;
+    font-size: x-large;
+    font-weight: lighter;
+    text-align: center;
+    color: white; }
+  main .container .row .tarjetaLimpiezas .boton {
+    display: block;
+    margin: auto;
+    margin-top: 5rem; }
+
+@media (max-width: 540px) {
+  main .container .row .tarjetaLimpiezas .parrafoCard {
+    margin-top: 2rem;
+    font-size: large;
+    font-weight: lighter;
+    text-align: center;
+    color: white; } }
+
+@media (max-width: 1200px) {
+  main .container .row .tarjetaLimpiezas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/agua.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0;
+    transition: all 2s;
+    padding: 3rem; } }
+
+main .tarjetaLimpiezas:hover {
+  transform: scale(1.1);
+  border-radius: 2rem; }
+
+main .container .row .tarjetaMantenimientos {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/limpiezascard2.jpg);
+  padding: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0;
+  transition: all 2s; }
+  main .container .row .tarjetaMantenimientos .tituloCard {
+    font-weight: lighter;
+    font-size: xx-large;
+    text-align: center;
+    color: white; }
+  main .container .row .tarjetaMantenimientos .parrafoCard {
+    margin-top: 2rem;
+    font-size: x-large;
+    font-weight: lighter;
+    text-align: center;
+    color: white; }
+  main .container .row .tarjetaMantenimientos .boton {
+    display: block;
+    margin: auto;
+    margin-top: 5rem; }
+
+@media (max-width: 540px) {
+  main .container .row .tarjetaMantenimientos .parrafoCard {
+    margin-top: 2rem;
+    font-size: large;
+    font-weight: lighter;
+    text-align: center;
+    color: white; } }
+
+@media (max-width: 1200px) {
+  main .container .row .tarjetaMantenimientos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/agua.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0;
+    transition: all 2s;
+    padding: 3rem; } }
+
+main .tarjetaMantenimientos:hover {
+  transform: scale(1.1);
+  border-radius: 2rem; }
+
+main .container .row .tarjetaProductos {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/limpiezascard2.jpg);
+  padding: 3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0;
+  transition: all 2s; }
+  main .container .row .tarjetaProductos .tituloCard {
+    font-weight: lighter;
+    font-size: xx-large;
+    text-align: center;
+    color: white; }
+  main .container .row .tarjetaProductos .parrafoCard {
+    margin-top: 2rem;
+    font-size: x-large;
+    font-weight: lighter;
+    text-align: center;
+    color: white; }
+  main .container .row .tarjetaProductos .boton {
+    display: block;
+    margin: auto;
+    margin-top: 5rem; }
+
+@media (max-width: 540px) {
+  main .container .row .tarjetaProductos .parrafoCard {
+    margin-top: 2rem;
+    font-size: large;
+    font-weight: lighter;
+    text-align: center;
+    color: white; } }
+
+@media (max-width: 1200px) {
+  main .container .row .tarjetaProductos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/agua.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0;
+    transition: all 2s;
+    padding: 3rem; } }
+
+main .tarjetaProductos:hover {
+  transform: scale(1.1);
+  border-radius: 2rem; }
+
+.imgFooter {
+  margin: auto;
+  display: block;
+  width: 4rem;
+  border-radius: 0.5rem; }
+
+.textoFooter {
+  font-weight: lighter;
+  display: block;
+  margin: auto;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: white;
+  text-align: center; }
+
+.fondoFooter {
+  padding: 2rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)); }
+
+.linkFooter {
+  text-decoration: none;
+  color: white;
+  font-weight: lighter;
+  font-size: larger; }
+
+.estiloLink {
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.061);
+  padding: 1rem;
+  margin: auto; }
+
+.mantenimientos {
+  display: flex;
+  font-size: 3rem;
+  justify-content: center; }
+
+.empresaIdeal {
+  padding: 2rem;
+  font-size: 1.5rem; }
+
+.textoMantenimiento {
+  text-align: center;
+  color: white;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  font-size: xx-large;
+  font-weight: lighter;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white; }
+
+@media (max-width: 540px) {
+  .textoMantenimiento {
+    font-size: x-large; } }
+
+.tarjetaPlanes {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  transition: all 2s; }
+
+.tarjetaPlanes:hover {
+  transform: scale(1.1);
+  border-radius: 2rem; }
+
+.botonPlanes {
+  display: block; }
+
+.formulario {
+  padding-top: 7rem;
+  padding-bottom: 7rem; }
+
+.lineaFormulario {
+  padding: 1rem; }
+
+.letraForm {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: white; }
 
 .formularioFondo {
-    background-color: rgba(1, 0, 41, 0.35);
-}
+  background-color: rgba(1, 0, 41, 0.35); }
 
-.textoLimpiezas{
-    text-align: center;
-    color: rgb(255, 255, 255);
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    font-size: xx-large;
-    font-weight: lighter;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-}
+.textoLimpiezas {
+  text-align: center;
+  color: white;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  font-size: xx-large;
+  font-weight: lighter;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white; }
 
-@media (max-width: 540px){
-    .textoLimpiezas{
-        font-size: x-large;
-    }
-}
+@media (max-width: 540px) {
+  .textoLimpiezas {
+    font-size: x-large; } }
 
-.precioLimpieza{
-    color: white;
-    font-size: xx-large;
-    text-align: center;
-    margin-bottom: 5rem;
-    font-weight: lighter;
-}
+.precioLimpieza {
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight: lighter; }
 
-.ventaDeproductos{
-    display: flex;
-    font-size: 3rem;
-    justify-content: center;
-}
+.ventaDeproductos {
+  display: flex;
+  font-size: 3rem;
+  justify-content: center; }
