@@ -143,8 +143,34 @@
         border: 0;
         transition: all 2s; 
     }
+
+.fondoFooter{
+    padding: 2rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));}
+}
+.estiloLink{
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.061);
+    padding: 1rem;
+    margin: auto;
 }
 
+.linkFooter{
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    font-size: larger;
+}
+
+.textoFooter{
+    font-weight: lighter;
+    display: block;
+    margin: auto;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
 */
 
 *{
@@ -157,14 +183,19 @@ main{
     background-color: rgba(1, 0, 41, 0.35);
 }
 
+.linkNav:hover{
+    color: rgb(10, 0, 207);
+ } 
+
 header{
      .linkNav{
     margin-left: 1rem;
      margin-right: 1rem;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: x-large; 
+    font-size: x-large;
     }
+    
 }
 
 main{
@@ -217,133 +248,6 @@ main{
         
     }
 
-    .container{
-        .row{
-                .tarjetaLimpiezas{
-                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/limpiezascard2.jpg);
-                padding: 3rem;
-                background-repeat: no-repeat;
-                background-size: cover;
-                border: 0;
-                transition: all 2s;
-                    .tituloCard{
-                    font-weight: lighter;
-                    font-size: xx-large;
-                    text-align: center;
-                    color: rgb(255, 255, 255);
-                    }
-                    .parrafoCard{
-                    margin-top: 2rem;
-                    font-size: x-large;
-                    font-weight: lighter;
-                    text-align: center;
-                    color: rgb(255, 255, 255);
-                }
-            }
-
-        }
-    }
-
-    @media (max-width:540px){
-        .container{
-            .row{
-                .tarjetaLimpiezas{
-                    .parrafoCard{
-                        margin-top: 2rem;
-                        font-size: large;
-                        font-weight: lighter;
-                        text-align: center;
-                        color: rgb(255, 255, 255); 
-                    }
-                }
-            }
-        }
-    }
-        @media (max-width: 1200px){
-        .container{
-            .row{
-                .tarjetaLimpiezas{
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/agua.jpg);
-                    background-repeat: no-repeat;
-                    background-size:cover ;
-                    border: 0;
-                    transition: all 2s;
-                    padding: 3rem;
-                    }
-                }
-            }
-        
-        }
-    
-    
-    .tarjetaLimpiezas:hover{
-        transform: scale(1.1);
-        border-radius: 2rem;
-        }
-        
-    .container{
-        .row{
-                .tarjetaLimpiezas{
-                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/limpiezascard2.jpg);
-                padding: 3rem;
-                background-repeat: no-repeat;
-                background-size: cover;
-                border: 0;
-                transition: all 2s;
-                    .tituloCard{
-                    font-weight: lighter;
-                    font-size: xx-large;
-                    text-align: center;
-                    color: rgb(255, 255, 255);
-                    }
-                    .parrafoCard{
-                    margin-top: 2rem;
-                    font-size: x-large;
-                    font-weight: lighter;
-                    text-align: center;
-                    color: rgb(255, 255, 255);
-                }
-            }
-
-        }
-    }
-
-    @media (max-width:540px){
-        .container{
-            .row{
-                .tarjetaLimpiezas{
-                    .parrafoCard{
-                        margin-top: 2rem;
-                        font-size: large;
-                        font-weight: lighter;
-                        text-align: center;
-                        color: rgb(255, 255, 255); 
-                    }
-                }
-            }
-        }
-    }
-        @media (max-width: 1200px){
-        .container{
-            .row{
-                .tarjetaLimpiezas{
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/agua.jpg);
-                    background-repeat: no-repeat;
-                    background-size:cover ;
-                    border: 0;
-                    transition: all 2s;
-                    padding: 3rem;
-                    }
-                }
-            }
-        
-        }
-    
-    
-    .tarjetaLimpiezas:hover{
-        transform: scale(1.1);
-        border-radius: 2rem;
-        }
 
     .container{
         .row{
@@ -554,53 +458,103 @@ main{
         transform: scale(1.1);
         border-radius: 2rem;
         }
+
 }
 
-.imgFooter{
-    margin: auto;
-    display: block;
-    width: 4rem;
-    border-radius: 0.5rem;
-}
-.textoFooter{
-    font-weight: lighter;
-    display: block;
-    margin: auto;
-    border-radius: 1rem;
-    padding: 1rem;
-    color: white;
-    text-align: center;
-}
-.fondoFooter{
+    .fondoFooter{
     padding: 2rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+        .estiloLink{
+        border-radius: 1rem;
+        background-color: rgba(249, 249, 249, 0.061);
+        padding: 1rem;
+        margin: auto;
+        .row{
+            .linkFooter{
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                font-weight: lighter;
+                font-size: larger;
+                
+            }
+        }
+            
+    }
 
-}
-
-.linkFooter{
-    text-decoration: none;
-    color: white;
-    font-weight: lighter;
-    font-size: larger;
-
-}
-
-.estiloLink{
-    border-radius: 1rem;
-    background-color: rgba(255, 255, 255, 0.061);
-    padding: 1rem;
-    margin: auto;
-}
-.mantenimientos{
     
-    display: flex;
-    font-size: 3rem;
-    justify-content: center;
+    .container{
+        .row{
+            .textoFooter{
+                font-weight: lighter;
+                display: block;
+                margin: auto;
+                border-radius: 1rem;
+                padding: 1rem;
+                color: white;
+                text-align: center;
+            }
+        }
+    }
+    
 }
 
-.empresaIdeal{
-    padding: 2rem;
-    font-size: 1.5rem;
+.fondoFooter{
+    .estiloLink{
+        .row{
+            .linkFooter:hover{
+                color: rgb(0, 110, 255);
+            }
+        }
+    }
+}
+.container-fluid{
+    .row{
+        .fondoAgua{
+            .mantenimientos{
+                display: flex;
+                font-size: 3rem;
+                justify-content: center;
+            }
+            .empresaIdeal{
+                padding: 2rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.container{
+    .row{
+        .textoLimpiezas{
+            text-align: center;
+            color: rgb(255, 255, 255);
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+            font-size: xx-large;
+            font-weight: lighter;
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+        }
+        
+        .precioLimpieza{
+            color: white;
+            font-size: xx-large;
+            text-align: center;
+            margin-bottom: 5rem;
+            font-weight: lighter;
+        }
+    }
+
+}
+
+@media (max-width: 540px){
+    .container{
+        .row{
+            .textoLimpiezas{
+                font-size: x-large;
+            }
+        }
+    }  
 }
 
 .textoMantenimiento{
@@ -653,30 +607,8 @@ padding: 1rem;
     background-color: rgba(1, 0, 41, 0.35);
 }
 
-.textoLimpiezas{
-    text-align: center;
-    color: rgb(255, 255, 255);
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    font-size: xx-large;
-    font-weight: lighter;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-}
 
-@media (max-width: 540px){
-    .textoLimpiezas{
-        font-size: x-large;
-    }
-}
 
-.precioLimpieza{
-    color: white;
-    font-size: xx-large;
-    text-align: center;
-    margin-bottom: 5rem;
-    font-weight: lighter;
-}
 
 .ventaDeproductos{
     display: flex;
