@@ -461,3 +461,13 @@ main .container-fluid .row .fondoAgua .ventaDeproductos {
   display: flex;
   font-size: 3rem;
   justify-content: center; }
+
+main .container .row .textoContacto {
+  text-align: center;
+  color: white;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  font-size: xx-large;
+  font-weight: lighter;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white; }
