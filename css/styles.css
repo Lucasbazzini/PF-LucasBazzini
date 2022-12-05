@@ -188,7 +188,7 @@ header .linkNav {
   font-size: x-large; }
 
 header .linkNav:hover {
-  color: #0099e6; }
+  color: #0004e6; }
 
 main .fondoAgua {
   background-size: cover;
@@ -384,7 +384,7 @@ main .tarjetaProductos:hover {
   text-align: center; }
 
 .fondoFooter .estiloLink .linkFooter:hover {
-  color: #0099e6; }
+  color: #0004e6; }
 
 .container-fluid .row .fondoAgua .mantenimientos {
   display: flex;
