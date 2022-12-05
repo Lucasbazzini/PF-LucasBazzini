@@ -173,6 +173,16 @@
 }
 */
 
+
+$colorLinkhover: rgb(0, 153, 230);
+$texto: rgb(255, 255, 255);
+$bordesColor: rgb(255, 255, 255);
+$tituloCard: xx-large;
+$parrafoCard: x-large;
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -183,17 +193,18 @@ main{
     background-color: rgba(1, 0, 41, 0.35);
 }
 
-.linkNav:hover{
-    color: rgb(10, 0, 207);
- } 
+
 
 header{
      .linkNav{
     margin-left: 1rem;
-     margin-right: 1rem;
+    margin-right: 1rem;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-size: x-large;
+    }
+    .linkNav:hover{
+        color: $colorLinkhover;
     }
     
 }
@@ -202,9 +213,9 @@ main{
     .fondoAgua {
         background-size: cover;
         background-repeat: no-repeat;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/Images/agua.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../assets/Images/agua.jpg);
         text-align: center;
-        color: rgb(255, 255, 255);
+        color: $texto;
         padding-top: 8rem;
         padding-bottom: 8rem;
         margin-bottom: 5rem;
@@ -225,13 +236,13 @@ main{
         .row{
             .texto{
             text-align: center;
-            color: white;
+            color: $texto;
             padding-top: 4rem;
             padding-bottom: 4rem;
             font-size: xx-large;
             font-weight: lighter;
-            border-top: 2px solid white;
-            border-bottom: 2px solid white;
+            border-top: 2px solid $bordesColor;
+            border-bottom: 2px solid $bordesColor;
             }
         }
     }
@@ -260,16 +271,16 @@ main{
                 transition: all 2s;
                     .tituloCard{
                     font-weight: lighter;
-                    font-size: xx-large;
+                    font-size: $tituloCard;
                     text-align: center;
-                    color: rgb(255, 255, 255);
+                    color: $texto;
                     }
                     .parrafoCard{
                     margin-top: 2rem;
-                    font-size: x-large;
+                    font-size: $parrafoCard;
                     font-weight: lighter;
                     text-align: center;
-                    color: rgb(255, 255, 255);
+                    color: $texto;
                 }
 
                 .boton{
@@ -291,7 +302,7 @@ main{
                         font-size: large;
                         font-weight: lighter;
                         text-align: center;
-                        color: rgb(255, 255, 255); 
+                        color: $texto; 
                     }
                 }
             }
@@ -330,16 +341,16 @@ main{
                     transition: all 2s;
                         .tituloCard{
                         font-weight: lighter;
-                        font-size: xx-large;
+                        font-size: $tituloCard;
                         text-align: center;
-                        color: rgb(255, 255, 255);
+                        color: $texto;
                         }
                         .parrafoCard{
                         margin-top: 2rem;
-                        font-size: x-large;
+                        font-size: $parrafoCard;
                         font-weight: lighter;
                         text-align: center;
-                        color: rgb(255, 255, 255);
+                        color: $texto;
                     }
 
                     .boton{
@@ -361,7 +372,7 @@ main{
                             font-size: large;
                             font-weight: lighter;
                             text-align: center;
-                            color: rgb(255, 255, 255); 
+                            color: $texto; 
                         }
                     }
                 }
@@ -400,16 +411,16 @@ main{
                     transition: all 2s;
                         .tituloCard{
                         font-weight: lighter;
-                        font-size: xx-large;
+                        font-size: $tituloCard;
                         text-align: center;
-                        color: rgb(255, 255, 255);
+                        color: $texto;
                         }
                         .parrafoCard{
                         margin-top: 2rem;
-                        font-size: x-large;
+                        font-size: $parrafoCard;
                         font-weight: lighter;
                         text-align: center;
-                        color: rgb(255, 255, 255);
+                        color: $texto;
                     }
 
                     .boton{
@@ -431,7 +442,7 @@ main{
                             font-size: large;
                             font-weight: lighter;
                             text-align: center;
-                            color: rgb(255, 255, 255); 
+                            color: $texto; 
                         }
                     }
                 }
@@ -464,15 +475,23 @@ main{
     .fondoFooter{
     padding: 2rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    
         .estiloLink{
         border-radius: 1rem;
         background-color: rgba(249, 249, 249, 0.061);
         padding: 1rem;
         margin: auto;
-        .row{
-            .linkFooter{
+        .mapa{
+            display: block;
+            text-align: center;
+        }
+        .box{
+            display: block;
+            text-align: center;
+        }
+         .linkFooter{
                 text-decoration: none;
-                color: rgb(255, 255, 255);
+                color: $texto;
                 font-weight: lighter;
                 font-size: larger;
                 
@@ -490,21 +509,20 @@ main{
                 margin: auto;
                 border-radius: 1rem;
                 padding: 1rem;
-                color: white;
+                color: $texto;
                 text-align: center;
             }
         }
     }
     
-}
 
 .fondoFooter{
     .estiloLink{
-        .row{
+        
             .linkFooter:hover{
-                color: rgb(0, 110, 255);
+                color: $colorLinkhover;
             }
-        }
+        
     }
 }
 .container-fluid{
@@ -529,13 +547,13 @@ main{
             .row{
                 .textoMantenimiento{
                     text-align: center;
-                    color: rgb(255, 255, 255);
+                    color: $texto;
                     padding-top: 6rem;
                     padding-bottom: 6rem;
                     font-size: xx-large;
                     font-weight: lighter;
-                    border-top: 2px solid rgb(255, 255, 255);
-                    border-bottom: 2px solid white;
+                    border-top: 2px solid $bordesColor;
+                    border-bottom: 2px solid $bordesColor;
                 }
             }
         }
@@ -549,16 +567,16 @@ main{
                 .card-body{
                     .tituloCard{
                         font-weight: lighter;
-                        font-size: xx-large;
+                        font-size: $tituloCard;
                         text-align: center;
-                        color: rgb(255, 255, 255);
+                        color: $texto;
                     }
                     .parrafoCard{
                         margin-top: 2rem;
-                        font-size: x-large;
+                        font-size: $parrafoCard;
                         font-weight: lighter;
                         text-align: center;
-                        color: rgb(255, 255, 255);
+                        color: $texto;
                     }
                     .botonPlanes{
                         display: block;
@@ -604,17 +622,17 @@ main{
     .row{
         .textoLimpiezas{
             text-align: center;
-            color: rgb(255, 255, 255);
+            color: $texto;
             padding-top: 6rem;
             padding-bottom: 6rem;
             font-size: xx-large;
             font-weight: lighter;
-            border-top: 2px solid white;
-            border-bottom: 2px solid white;
+            border-top: 2px solid $bordesColor;
+            border-bottom: 2px solid $bordesColor;
         }
         
         .precioLimpieza{
-            color: white;
+            color: $texto;
             font-size: xx-large;
             text-align: center;
             margin-bottom: 5rem;
@@ -649,7 +667,7 @@ main{
         .letraForm{
             font-size: 1rem;
             font-weight: lighter;
-            color: rgb(255, 255, 255);
+            color: $texto;
         }
     }
 }
@@ -673,13 +691,13 @@ main{
         .row{
             .textoContacto{
                 text-align: center;
-                color: rgb(255, 255, 255);
+                color: $texto;
                 padding-top: 6rem;
                 padding-bottom: 6rem;
                 font-size: xx-large;
                 font-weight: lighter;
-                border-top: 2px solid rgb(255, 255, 255);
-                border-bottom: 2px solid white;
+                border-top: 2px solid $bordesColor;
+                border-bottom: 2px solid $bordesColor;
             }
         }
     }

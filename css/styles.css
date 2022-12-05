@@ -180,9 +180,6 @@
 main {
   background-color: rgba(1, 0, 41, 0.35); }
 
-.linkNav:hover {
-  color: #0a00cf; }
-
 header .linkNav {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -190,10 +187,13 @@ header .linkNav {
   color: white;
   font-size: x-large; }
 
+header .linkNav:hover {
+  color: #0099e6; }
+
 main .fondoAgua {
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/Images/agua.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../assets/Images/agua.jpg);
   text-align: center;
   color: white;
   padding-top: 8rem;
@@ -362,22 +362,29 @@ main .tarjetaProductos:hover {
     background-color: rgba(249, 249, 249, 0.061);
     padding: 1rem;
     margin: auto; }
-    .fondoFooter .estiloLink .row .linkFooter {
+    .fondoFooter .estiloLink .mapa {
+      display: block;
+      text-align: center; }
+    .fondoFooter .estiloLink .box {
+      display: block;
+      text-align: center; }
+    .fondoFooter .estiloLink .linkFooter {
       text-decoration: none;
       color: white;
       font-weight: lighter;
       font-size: larger; }
-  .fondoFooter .container .row .textoFooter {
-    font-weight: lighter;
-    display: block;
-    margin: auto;
-    border-radius: 1rem;
-    padding: 1rem;
-    color: white;
-    text-align: center; }
 
-.fondoFooter .estiloLink .row .linkFooter:hover {
-  color: #006eff; }
+.container .row .textoFooter {
+  font-weight: lighter;
+  display: block;
+  margin: auto;
+  border-radius: 1rem;
+  padding: 1rem;
+  color: white;
+  text-align: center; }
+
+.fondoFooter .estiloLink .linkFooter:hover {
+  color: #0099e6; }
 
 .container-fluid .row .fondoAgua .mantenimientos {
   display: flex;
