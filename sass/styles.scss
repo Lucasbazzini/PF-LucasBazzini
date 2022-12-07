@@ -1,180 +1,19 @@
-/*
-.linkNav {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: x-large;
-}
 
-
-.fondoAgua {
-    background-size: cover;
+@mixin backgroundCard{
     background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/Images/agua.jpg);
-    text-align: center;
-    color: rgb(255, 255, 255);
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    margin-bottom: 5rem;
-    }
-
-.poolClean {
-    flex-wrap: wrap;
-    display: flex;
-    font-size: 3rem;
-    justify-content: center;
-} 
-
-.empresa {
-    padding: 2rem;
-    font-size: 1.5rem;
-}
-
-.texto{
-    text-align: center;
-    color: white;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    font-size: xx-large;
-    font-weight: lighter;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-}
-
-.tarjetaLimpiezas{
+    background-size: cover;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/limpiezascard2.jpg);
-    padding: 3rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 0;
-    transition: all 2s;
 }
 
-.tituloCard{ 
-    font-weight: lighter;
-    font-size: xx-large;
-    text-align: center;
-    color: rgb(255, 255, 255);
-}
-
-.parrafoCard{
+@mixin parrafoCard540px {
     margin-top: 2rem;
-    font-size: x-large;
+    font-size: large;
     font-weight: lighter;
     text-align: center;
-    color: rgb(255, 255, 255);
 }
 
-@media (max-width:540px){
-    .parrafoCard{
-        margin-top: 2rem;
-        font-size: large;
-        font-weight: lighter;
-        text-align: center;
-        color: rgb(255, 255, 255); 
-    }
-}
 
-.tarjetaLimpiezas:hover{
-    transform: scale(1.1);
-    border-radius: 2rem;
-}
-
-@media (max-width: 1200px){
-    .tarjetaLimpiezas{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/agua.jpg);
-        background-repeat: no-repeat;
-        background-size:cover ;
-        border: 0;
-        transition: all 2s;
-        padding: 3rem;
-    }
-}
-
-.tarjetaMantenimientos{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/manteniminetocard2.jpg);
-    padding: 3rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 0;
-
-    transition: all 2s;
-}
-
-.tarjetaMantenimientos:hover{
-    transform: scale(1.1);
-    border-radius: 2rem;
-}
-
-@media (max-width:1200px){
-    .tarjetaMantenimientos{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/agua.jpg);
-    padding: 3rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 0;
-    margin-bottom: 5rem;
-    transition: all 2s;
-    }
-
-}
-
-.tarjetaProductos{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/Productoscard2.jpg);
-    padding: 3rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 0;
-    transition: all 2s;
-}
-
-.tarjetaProductos:hover{
-    transform: scale(1.1);
-    border-radius: 2rem;
-}
-
-@media (max-width:1200px){
-    .tarjetaProductos{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/agua.jpg);
-        padding: 3rem;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border: 0;
-        transition: all 2s; 
-    }
-
-.fondoFooter{
-    padding: 2rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));}
-}
-.estiloLink{
-    border-radius: 1rem;
-    background-color: rgba(255, 255, 255, 0.061);
-    padding: 1rem;
-    margin: auto;
-}
-
-.linkFooter{
-    text-decoration: none;
-    color: white;
-    font-weight: lighter;
-    font-size: larger;
-}
-
-.textoFooter{
-    font-weight: lighter;
-    display: block;
-    margin: auto;
-    border-radius: 1rem;
-    padding: 1rem;
-    color: white;
-    text-align: center;
-}
-*/
-
-
-$colorLinkhover: rgb(0, 4, 230);
+$colorLinkhover: rgb(98, 98, 98);
 $texto: rgb(255, 255, 255);
 $bordesColor: rgb(255, 255, 255);
 $tituloCard: xx-large;
@@ -263,10 +102,8 @@ main{
     .container{
         .row{
                 .tarjetaLimpiezas{
-                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/limpiezascard2.jpg);
+                @include backgroundCard();
                 padding: 3rem;
-                background-repeat: no-repeat;
-                background-size: cover;
                 border: 0;
                 transition: all 2s;
                     .tituloCard{
@@ -298,10 +135,7 @@ main{
             .row{
                 .tarjetaLimpiezas{
                     .parrafoCard{
-                        margin-top: 2rem;
-                        font-size: large;
-                        font-weight: lighter;
-                        text-align: center;
+                        @include parrafoCard540px();
                         color: $texto; 
                     }
                 }
@@ -312,9 +146,7 @@ main{
         .container{
             .row{
                 .tarjetaLimpiezas{
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/agua.jpg);
-                    background-repeat: no-repeat;
-                    background-size:cover ;
+                    @include backgroundCard();
                     border: 0;
                     transition: all 2s;
                     padding: 3rem;
@@ -333,10 +165,7 @@ main{
         .container{
             .row{
                     .tarjetaMantenimientos{
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/manteniminetocard2.jpg);
-                    padding: 3rem;
-                    background-repeat: no-repeat;
-                    background-size: cover;
+                        @include backgroundCard();
                     border: 0;
                     transition: all 2s;
                         .tituloCard{
@@ -368,10 +197,7 @@ main{
                 .row{
                     .tarjetaMantenimientos{
                         .parrafoCard{
-                            margin-top: 2rem;
-                            font-size: large;
-                            font-weight: lighter;
-                            text-align: center;
+                            @include parrafoCard540px();
                             color: $texto; 
                         }
                     }
@@ -383,9 +209,7 @@ main{
             .container{
                 .row{
                     .tarjetaMantenimientos{
-                        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/agua.jpg);
-                        background-repeat: no-repeat;
-                        background-size:cover ;
+                        @include backgroundCard();
                         border: 0;
                         transition: all 2s;
                         padding: 3rem;
@@ -403,10 +227,8 @@ main{
         .container{
             .row{
                     .tarjetaProductos{
-                    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/Productoscard2.jpg);
+                    @include backgroundCard();
                     padding: 3rem;
-                    background-repeat: no-repeat;
-                    background-size: cover;
                     border: 0;
                     transition: all 2s;
                         .tituloCard{
@@ -438,10 +260,7 @@ main{
                 .row{
                     .tarjetaProductos{
                         .parrafoCard{
-                            margin-top: 2rem;
-                            font-size: large;
-                            font-weight: lighter;
-                            text-align: center;
+                            @include parrafoCard540px();
                             color: $texto; 
                         }
                     }
@@ -453,9 +272,7 @@ main{
             .container{
                 .row{
                     .tarjetaProductos{
-                        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/agua.jpg);
-                        background-repeat: no-repeat;
-                        background-size:cover ;
+                        @include backgroundCard();
                         border: 0;
                         transition: all 2s;
                         padding: 3rem;
@@ -615,6 +432,7 @@ main{
     
     
 }
+
 
 
 
