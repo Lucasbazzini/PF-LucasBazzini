@@ -19,9 +19,7 @@ header .linkNav:hover {
   color: #626262; }
 
 main .fondoAgua {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../assets/Images/agua.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.09));
   text-align: center;
   color: white;
   padding-top: 8rem;

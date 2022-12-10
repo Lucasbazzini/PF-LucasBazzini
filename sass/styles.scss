@@ -13,9 +13,6 @@ $bordesColor: rgb(255, 255, 255);
 $tituloCard: xx-large;
 $parrafoCard: x-large;
 
-
-
-
 *{
     margin: 0;
     padding: 0;
@@ -47,9 +44,7 @@ header{
 
 main{
     .fondoAgua {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../assets/Images/agua.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.09));
         text-align: center;
         color: $texto;
         padding-top: 8rem;
