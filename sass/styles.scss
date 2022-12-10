@@ -1,10 +1,4 @@
 
-@mixin backgroundCard{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/limpiezascard2.jpg);
-}
-
 @mixin parrafoCard540px {
     margin-top: 2rem;
     font-size: large;
@@ -29,7 +23,10 @@ $parrafoCard: x-large;
 }
 
 main{
-    background-color: rgba(1, 0, 41, 0.35);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/agua2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 
@@ -102,10 +99,12 @@ main{
     .container{
         .row{
                 .tarjetaLimpiezas{
-                @include backgroundCard();
-                padding: 3rem;
-                border: 0;
-                transition: all 2s;
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/limpiezascard2.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    padding: 3rem;
+                    border: 0;
+                    transition: all 2s;
                     .tituloCard{
                     font-weight: lighter;
                     font-size: $tituloCard;
@@ -146,7 +145,7 @@ main{
         .container{
             .row{
                 .tarjetaLimpiezas{
-                    @include backgroundCard();
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/agua.jpg);
                     border: 0;
                     transition: all 2s;
                     padding: 3rem;
@@ -165,9 +164,12 @@ main{
         .container{
             .row{
                     .tarjetaMantenimientos{
-                        @include backgroundCard();
-                    border: 0;
-                    transition: all 2s;
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/manteniminetocard2.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        padding: 3rem;
+                        border: 0;
+                        transition: all 2s;
                         .tituloCard{
                         font-weight: lighter;
                         font-size: $tituloCard;
@@ -181,7 +183,7 @@ main{
                         text-align: center;
                         color: $texto;
                     }
-
+    
                     .boton{
                         display: block;
                         margin:auto;
@@ -209,7 +211,7 @@ main{
             .container{
                 .row{
                     .tarjetaMantenimientos{
-                        @include backgroundCard();
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/agua.jpg);
                         border: 0;
                         transition: all 2s;
                         padding: 3rem;
@@ -227,10 +229,13 @@ main{
         .container{
             .row{
                     .tarjetaProductos{
-                    @include backgroundCard();
-                    padding: 3rem;
-                    border: 0;
-                    transition: all 2s;
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/Productoscard2.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        padding: 3rem;
+                        border: 0;
+                        transition: all 2s;
+                        
                         .tituloCard{
                         font-weight: lighter;
                         font-size: $tituloCard;
@@ -272,7 +277,7 @@ main{
             .container{
                 .row{
                     .tarjetaProductos{
-                        @include backgroundCard();
+                        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/Images/agua.jpg);
                         border: 0;
                         transition: all 2s;
                         padding: 3rem;
