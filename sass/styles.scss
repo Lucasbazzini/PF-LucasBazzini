@@ -17,6 +17,11 @@ $parrafoCard: x-large;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
 }
 
 main{
@@ -44,7 +49,7 @@ header{
 
 main{
     .fondoAgua {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.09));
+        
         text-align: center;
         color: $texto;
         padding-top: 8rem;
@@ -516,6 +521,39 @@ main{
                 font-weight: lighter;
                 border-top: 2px solid $bordesColor;
                 border-bottom: 2px solid $bordesColor;
+            }
+        }
+    }
+}
+
+
+.main404{
+    height: 100vh;
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        .img404{
+            width: 30rem;
+            margin-bottom: 3rem;
+        }
+        .titulo404{
+            
+            color: white;
+            font-size: 30px;
+            padding: 3rem;
+        }
+    }
+}
+
+@media (max-width: 540px){
+    .main404{
+        .contenedor{
+            .titulo404{
+                text-align: center;
+                font-size: 25px;
             }
         }
     }
