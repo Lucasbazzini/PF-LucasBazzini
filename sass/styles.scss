@@ -390,7 +390,7 @@ main{
                     .tituloCard{
                         font-weight: lighter;
                         font-size: $tituloCard;
-                        text-align: center;
+                        text-align: center; 
                         color: $texto;
                     }
                     .parrafoCard{
@@ -407,7 +407,32 @@ main{
             }
         }
     }
+    .container{
+        .row{
+            .imgProductos{
+                flex-direction: column;
+                display: flex;
+                margin-top: 4rem;
+                margin-bottom: 5rem;
+                .productos{
+                    filter: brightness(60%);
+                    display: flex;
+                    justify-content: center;
+                    object-fit: contain;
+                    height: 50vh;
+                    margin-top: 1rem;
+                }
+                .productosTexto{
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
+
 
 
 main{
@@ -420,6 +445,8 @@ main{
         }
     }
 }
+
+
 
 
 @media (max-width: 540px){

@@ -245,6 +245,24 @@ main .container .row .tarjetaPlanes {
   main .container .row .tarjetaPlanes .card-body .botonPlanes {
     display: block; }
 
+main .container .row .imgProductos {
+  flex-direction: column;
+  display: flex;
+  margin-top: 4rem;
+  margin-bottom: 5rem; }
+  main .container .row .imgProductos .productos {
+    filter: brightness(60%);
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+    height: 50vh;
+    margin-top: 1rem; }
+  main .container .row .imgProductos .productosTexto {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center; }
+
 main .container .row .tarjetaPlanes:hover {
   transform: scale(1.1);
   border-radius: 2rem; }
